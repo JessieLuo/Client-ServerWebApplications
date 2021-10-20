@@ -7,7 +7,7 @@ const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static('public'))
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(__dirname + '/cusLogin.html')
 })
 
 mongoose.connect("mongodb://localhost:27017/client", { useNewUrlParser: true })
